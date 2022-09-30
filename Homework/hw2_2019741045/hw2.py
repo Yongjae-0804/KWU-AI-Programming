@@ -1,6 +1,7 @@
 # 파일 입력 받기
 f = open('KWU-AI-Programming\Homework\hw2_2019741045\Data.csv', 'r',encoding= 'utf-8') #인코딩 필수
 tmp1 = f.read()
+f.close()
 tmp1 = tmp1[1:] #첫 공백문자 제거
 
 tmp2 = tmp1.split('\n') #개행문자 기준으로 1차원 리스트만들기
@@ -94,4 +95,3 @@ while(1):
         print(read_me)
     q = int(input('원하시는 수행의 번호를 입력하세요: '))
 
-f.close()
