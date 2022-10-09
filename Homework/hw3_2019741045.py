@@ -24,7 +24,8 @@ data = "" #빈 문자열 생성 because 워드 크라우드는 str에서 작동?
 for i in web:
     data += i.text #텍스트를 뽑는 메서드를 활용 계속 집어 넣어준다.?????
 
-s_words = wc.STOPWORDS.union({'one', 'two', 'three', 'year', 'first', 'second','있다','월'}) #쓸모없는 단어
+s_words = wc.STOPWORDS.union({'one', 'two', 'three', 'year', 'first', 'second','있다','월',
+'때문에','등','없다','팀이','것은','하지만'}) #쓸모없는 단어
 
 image = wc.WordCloud(font_path='C:/WINDOWS/FONTS/MALGUNSL.TTF', 
 width = 1000, height = 700, stopwords = s_words).generate(data) # 워드크라우드 생성
