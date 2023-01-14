@@ -1,5 +1,5 @@
 # 파일 입력 받기
-f = open('KWU-AI-Programming\Homework\hw2_2019741045\Data.csv', 'r',encoding= 'utf-8') #인코딩 필수
+f = open('./Data.csv', 'r',encoding= 'utf-8') #인코딩 필수
 tmp1 = f.read()
 f.close()
 tmp1 = tmp1[1:] #첫 공백문자 제거
